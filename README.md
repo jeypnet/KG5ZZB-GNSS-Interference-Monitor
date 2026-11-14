@@ -10,7 +10,7 @@ The app listens to 1090 MHz, decodes Mode S / ADS-B extended squitter, and reads
 
 It is **receive-only**: it never transmits, jams or interferes with anything.
 
-![The built-in demo: a pretend jammer north-west of DFW, aircraft near it reporting NACp 0-2, two red map squares, the estimated source area, and the CNN classifying a swept chirp in the L1 band](docs/screenshot.png)
+![The built-in demo: a jammer north-west of DFW, aircraft near it reporting NACp 0-2, two red map squares, the estimated source area, and the CNN classifying a swept chirp in the L1 band](docs/screenshot.png)
 
 > **Status: v0.1.0.** Mode S demodulator and ADS-B decoder with NIC/NACp extraction, gpsjam-style grid aggregation, altitude-aware source estimation, spoofing heuristics, GPS L1 spectrum analysis with an embedded CNN, JSON Lines / CSV event log and a built-in demo all work. 78 automated tests (xUnit), run in CI on every push.
 
@@ -75,7 +75,7 @@ app's own L1Spectrogram   ->    held-out test set, export ONNX     ->   1 s prob
 | GPS L1 DSP | Spectrogram, quiet-floor learning, features, Welch display spectrum, event tracker |
 | Machine learning | Signal generator, PyTorch CNN, ONNX export, ONNX Runtime inference, rule baseline |
 | Events | Event lifecycle, JSON Lines log, CSV/JSON export |
-| Simulation | Air traffic with a jamming zone and spoofing patterns, L1 interferer synthesis, pretend dongles |
+| Demo engine | Air traffic with a jamming zone and spoofing patterns, L1 interferer generation, demo dongles |
 | UI | WPF: verdict banner, offline map, L1 spectrum and waterfall, class probabilities, tables |
 
 ## Requirements
