@@ -2,6 +2,8 @@
 
 ![GNSS Interference Monitor: GPS jamming and spoofing detection from ADS-B and a neural network on the L1 band](docs/cover.png)
 
+[![Connect on LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/jeypnet/)
+
 <img src="docs/icon.png" width="96" align="right" alt="App icon: a purple satellite with a broken signal">
 
 **Passive GPS jamming and spoofing monitor for Windows with a low-cost RTL-SDR: maps where aircraft report degraded GNSS accuracy (ADS-B NACp/NIC), estimates the interference source area, and classifies jammer signals in the GPS L1 band with a convolutional neural network.**
@@ -109,6 +111,9 @@ app's own L1Spectrogram   ->    held-out test set, export ONNX     ->   1 s prob
 ## Source code
 This repository is the public showcase: description, results, model card and images.
 The source code is private. Technical walkthroughs are available on request.
+
+## Contact
+Into ham radio, RF, SDR or aviation? **[Let's connect on LinkedIn](https://www.linkedin.com/in/jeypnet/)**. I share new radio apps, RF projects and what I learn along the way.
 
 ## License
 Copyright (c) 2026 KG5ZZB. All rights reserved. Text and images may not be reused without permission.
